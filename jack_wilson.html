@@ -191,12 +191,20 @@ div.content {
   font-size: 14px;
 }
 
-div.project {
+div.segment {
   margin-bottom: 15px;
 }
 
 ul.courses {
   margin-left: 15px;
+}
+
+li.bullets {
+  margin-bottom: 5px;
+}
+
+div.last {
+  margin-bottom: 0;
 }
 
 
@@ -233,23 +241,23 @@ ul.courses {
         <section class="group">
           <header class="title">PROJECTS</header>
           <div class="content">
-            <div class="project">
+            <div class="segment">
               <ul>
                 <li>
                   <strong>Everread</strong>&mdash;<em>Social book organization and discovery</em><span class="bar">|</span><a href="http://everread.rocks">everread.rocks</a><span class="bar">|</span><a href="https://github.com/jackwilsonv/everread">github</a>
                 </li>
-                <li>Minimizes database queries through custom ActiveRecord associations and nested JSON/Jbuilder responses</li>
+                <li class="bullets">Minimizes database queries through custom ActiveRecord associations and nested JSON/Jbuilder responses</li>
                 <li>Innovative drag and drop interface custom built using native HTML5</li>
-                <li>Backbone.js frontend consuming RESTful API served by Ruby on Rails backend</li>
+                <li class="bullets">Backbone.js frontend consuming RESTful API served by Ruby on Rails backend</li>
               </ul>
             </div>
 
-            <div class="project">
+            <div class="segment">
               <ul>
                 <li>
                   <strong>HollowRail</strong>&mdash;<em>lightweight MVC framework modeled after Ruby on Rails</em><span class="bar">|</span><a href="https://github.com/jackwilsonv/hollowrail">github</a>
                 </li>
-                <li>
+                <li class="bullets">
                   Generates RESTful routes, matches incoming requests using RegExps
                 </li>
                 <li>
@@ -258,7 +266,7 @@ ul.courses {
               </ul>
             </div>
 
-            <div class="project">
+            <div class="segment last">
               <ul>
                 <li><strong>Asteroids</strong>&mdash;<em>Star Wars spin on the classic arcade game</em><span class="bar">|</span><a href="https://github.com/jackwilsonv/asteroids">github</a>
                 </li>
@@ -276,7 +284,7 @@ ul.courses {
         <section class="group">
           <header class="title">SKILLS</header>
           <div class="content">
-          <p><strong>Ruby, Rails, JavaScript, Backbone.js, Python, jQuery, Git, RSpec, SQL, HTML, CSS, TDD</strong></p>
+            <div class="segment last"><strong>Ruby, Rails, JavaScript, Backbone.js, Python, jQuery, Git, RSpec, SQL, HTML, CSS, TDD</strong></div>
           </div>
         </section>
 
@@ -285,32 +293,37 @@ ul.courses {
         <section class="group">
           <header class="title">EDUCATION</header>
           <div class="content">
-            <ul>
-              <li>
-                <strong>University of North Carolina</strong>&mdash;Kenan-Flagler Business School
-                <span class="float-right">2007-2011</span>
-              </li>
+            <div class="segment">
+              <ul>
+                <li>
+                  <strong>University of North Carolina</strong>&mdash;Kenan-Flagler Business School
+                  <span class="float-right">2007-2011</span>
+                </li>
 
-              <li>
-                BS in Business Administration, GPA: 3.6
-              </li>
-              <li>
-                <em>
-                  Relevant Coursework: Data Structures, Calculus, Statistics
-                </em>
-              </li>
-            </ul>
-            <h4>Independent Study:</h4>
+                <li>
+                  BS in Business Administration, GPA: 3.6
+                </li>
+                <li>
+                  <em>
+                    Relevant Coursework: Data Structures, Calculus, Statistics
+                  </em>
+                </li>
+              </ul>
+            </div>
 
-            <ul class="courses">
-              <li>
-                Stanford&mdash;<a href='https://www.coursera.org/course/algo'>Algorithms</a>, <a href='https://class.stanford.edu/courses/Engineering/db/2014_1/about'>Databases</a>, <a href='https://www.coursera.org/course/ml'>Machine Learning</a>
-                <br>
-                Udacity&mdash;<a href='https://www.udacity.com/course/cs212'>Design of Computer Programs</a>, <a href='https://www.udacity.com/course/cs253'>Web Development</a>
-                <br>
-                UT Austin&mdash;<a href='https://www.edx.org/course/utaustinx/utaustinx-ut-5-01x-linear-algebra-1162'>Linear Algebra</a>
-              </li>
-            </ul>
+            <div class="segment last">
+
+              <h4>Independent Study:</h4>
+
+              <ul class="courses">
+                <li>
+                  Stanford&mdash;<a href='https://www.coursera.org/course/algo'>Algorithms</a>, <a href='https://class.stanford.edu/courses/Engineering/db/2014_1/about'>Databases</a>, <a href='https://www.coursera.org/course/ml'>Machine Learning</a>
+                  <br>
+                  Udacity&mdash;<a href='https://www.udacity.com/course/cs212'>Design of Computer Programs</a>, <a href='https://www.udacity.com/course/cs253'>Web Development</a>
+                  <br>
+                  UT Austin&mdash;<a href='https://www.edx.org/course/utaustinx/utaustinx-ut-5-01x-linear-algebra-1162'>Linear Algebra</a>
+                </li>
+              </ul>
 
           </div>
         </section>
@@ -320,12 +333,35 @@ ul.courses {
         <section class="group">
           <header class="title">EXPERIENCE</header>
           <div class="content">
-            <ul>
-              <li><a class="header" href="http://www.ge.com"><strong>GE</strong></a>&mdash;<a class="header" href="http://www.ge.com/careers/culture/university-students/financial-management-program/united-states">Financial Management Program</a>
-                <span class="float-right">2012-2014</span>
-              </li>
-
-            </ul>
+            <div class="segment">
+              <ul>
+                <li><a class="header" href="http://www.ge.com"><strong>GE</strong></a>&mdash;<a class="header" href="http://www.ge.com/careers/culture/university-students/financial-management-program/united-states">Financial Management Program</a>
+                  <span class="float-right">2012-2014</span>
+                </li>
+                <li class="bullets">
+                  <em>The premier program of its kind, develops leadership and analytical skills through four assignments in diverse finance functions.</em>
+                </li>
+                <li class="bullets">
+                  Taught myself VBA programming to produce excel interface between legacy ledgers and Concur in Excel, reducing IT workload and meeting key deadlines
+                </li>
+                <li class="bullets">
+                  Led restructuring project at Corporate HQ to purify functional cost centers, working closely with executives and key stakeholders in each function
+                </li>
+              </ul>
+            </div>
+            <div class="segment last">
+              <ul>
+                <li>
+                  <a class="header" href="http://www.marines.com/becoming-a-marine/officer-candidates-school"><strong>USMC</strong> Officer Candidate School&mdash;Quantico, VA</a>
+                  <span class="float-right">2009</span>
+                </li>
+                <li class="bullets"><em>Platoon Leaders Course (PLC)&mdash;Juniors: Intense 6 week training course designed to simulate the extreme mental and physical stress borne by Marine Corps officers</em>
+                </li>
+                <li>
+                  Achieved top 10 finish in a 55 candidate platoon overcoming pneumonia and anemia during the last third of training
+                </li>
+              </ul>
+            </div>
         </section>
 
 
