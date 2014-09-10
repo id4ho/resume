@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link
+href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700,600,400' rel='stylesheet' type='text/css'>
+  <title>Jack Wilson</title>
+  <style>
+
+/* --- Reset user agent styles --- */
+
+html, body, header, h1, h2, h4, nav, div, ul, li, a, p, footer, small, strong, em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* --- Set basic html elements --- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+  font-size: 14pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #343435;
+}
+
+a {
+  font-weight: 600;
+  color: grey;
+  text-decoration: none;
+}
+
+a.header {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 12px;
+}
+
+em {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* --- Helper methods (clearfix) --- */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+/* --- overall page --- */
+
+#resume {
+    height: 256mm;
+    outline: 2cm #FFEAEA solid;
+}
+
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 0 auto;
+    /*border: 1px #D3D3D3 solid;*/
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.last-name {
+  color: #388AE5;
+  font-weight: 700;
+}
+
+ul.contact {
+  font-size: 14px;
+}
+
+ul.contact > li {
+  color: grey;
+  float: left;
+}
+
+.bar {
+  font-weight: bold;
+  color: #388AE5;
+  margin: 0 5px;
+}
+
+/*hr {
+  margin: 20px 0;
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 5px 2px grey;
+}
+hr:after {
+  content: "\00a0";
+}*/
+
+hr {
+  margin: 20px 0;
+  border: 1px solid grey;
+}
+
+/*hr {
+  border: 0;
+  border-bottom: 3px grey;
+  background: blue;
+}*/
+
+header.title {
+  float: left;
+  width: 3cm;
+  font-size: 14px;
+  font-weight: 600;
+  color: #388AE5;
+}
+
+div.content {
+  float: left;
+  width: 14cm;
+  font-size: 14px;
+}
+
+div.project {
+  margin-bottom: 15px;
+}
+
+ul.courses {
+  margin-left: 15px;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+  <div class="page">
+      <div class="resume">
+        <h1>Jack <span class="last-name">Wilson</span></h1>
+
+        <ul class="contact group">
+          <li>36 Cooper Sq.<span class="bar">|</span></li>
+          <li>New York, NY 10003<span class="bar">|</span></li>
+          <li>jack.wilson.v@gmail.com<span class="bar">|</span></li>
+          <li>336-829-0050</li>
+        </ul>
+        <ul class="contact group">
+          <li><a href="http://jackvnimble.com">jackvnimble.com</a><span class="bar">|</span></li>
+
+          <li><a href="http://github.com/jackwilsonv">github.com/jackwilsonv</a><span class="bar">|</span>
+          </li>
+
+          <li>
+            <a href="http://linkedin.com/jackwilsonv">linkedin.com/jackwilsonv</a>
+          </li>
+        </ul>
+
+        <hr>
+
+        <section class="group">
+          <header class="title">PROJECTS</header>
+          <div class="content">
+            <div class="project">
+              <ul>
+                <li>
+                  <strong>Everread</strong>&mdash;<em>Social book organization and discovery</em><span class="bar">|</span><a href="http://everread.rocks">everread.rocks</a><span class="bar">|</span><a href="https://github.com/jackwilsonv/everread">github</a>
+                </li>
+                <li>Minimizes database queries through custom ActiveRecord associations and nested JSON/Jbuilder responses</li>
+                <li>Innovative drag and drop interface custom built using native HTML5</li>
+                <li>Backbone.js frontend consuming RESTful API served by Ruby on Rails backend</li>
+              </ul>
+            </div>
+
+            <div class="project">
+              <ul>
+                <li>
+                  <strong>HollowRail</strong>&mdash;<em>lightweight MVC framework modeled after Ruby on Rails</em><span class="bar">|</span><a href="https://github.com/jackwilsonv/hollowrail">github</a>
+                </li>
+                <li>
+                  Generates RESTful routes, matches incoming requests using RegExps
+                </li>
+                <li>
+                  Uses WEBrick cookies to flash self-destructing messages to users
+                </li>
+              </ul>
+            </div>
+
+            <div class="project">
+              <ul>
+                <li><strong>Asteroids</strong>&mdash;<em>Star Wars spin on the classic arcade game</em><span class="bar">|</span><a href="https://github.com/jackwilsonv/asteroids">github</a>
+                </li>
+                <li>
+                  Uses linear algebra for positioning and velocity calculations
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="group">
+          <header class="title">SKILLS</header>
+          <div class="content">
+          <p><strong>Ruby, Rails, JavaScript, Backbone.js, Python, jQuery, Git, RSpec, SQL, HTML, CSS, TDD</strong></p>
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="group">
+          <header class="title">EDUCATION</header>
+          <div class="content">
+            <ul>
+              <li>
+                <strong>University of North Carolina</strong>&mdash;Kenan-Flagler Business School
+                <span class="float-right">2007-2011</span>
+              </li>
+
+              <li>
+                BS in Business Administration, GPA: 3.6
+              </li>
+              <li>
+                <em>
+                  Relevant Coursework: Data Structures, Calculus, Statistics
+                </em>
+              </li>
+            </ul>
+            <h4>Independent Study:</h4>
+
+            <ul class="courses">
+              <li>
+                Stanford&mdash;<a href='https://www.coursera.org/course/algo'>Algorithms</a>, <a href='https://class.stanford.edu/courses/Engineering/db/2014_1/about'>Databases</a>, <a href='https://www.coursera.org/course/ml'>Machine Learning</a>
+                <br>
+                Udacity&mdash;<a href='https://www.udacity.com/course/cs212'>Design of Computer Programs</a>, <a href='https://www.udacity.com/course/cs253'>Web Development</a>
+                <br>
+                UT Austin&mdash;<a href='https://www.edx.org/course/utaustinx/utaustinx-ut-5-01x-linear-algebra-1162'>Linear Algebra</a>
+              </li>
+            </ul>
+
+          </div>
+        </section>
+
+        <hr>
+
+        <section class="group">
+          <header class="title">EXPERIENCE</header>
+          <div class="content">
+            <ul>
+              <li><a class="header" href="http://www.ge.com"><strong>GE</strong></a>&mdash;<a class="header" href="http://www.ge.com/careers/culture/university-students/financial-management-program/united-states">Financial Management Program</a>
+                <span class="float-right">2012-2014</span>
+              </li>
+
+            </ul>
+        </section>
+
+
+      </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
