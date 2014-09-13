@@ -60,7 +60,7 @@ ul {
 h1 {
   font-size: 46px;
   font-weight: 600;
-  margin: 0 0 5px 0;
+  margin: -20px 0 5px 0;
 }
 
 h2 {
@@ -187,24 +187,27 @@ div.segment {
   margin-bottom: 10px;
 }
 
-ul.courses {
-  margin-left: 15px;
+li.courses {
+  margin-left: 18px;
+}
+
+li.header {
+  margin-bottom: 3px;
 }
 
 li.bullets {
-  margin-bottom: 3px;
+  list-style: disc;
+  list-style-position: outside;
+  margin-left: 18px;
 }
 
 div.last {
   margin-bottom: 0;
 }
 
-
-
-
-
-
 </style>
+
+
 </head>
 <body>
   <div class="page">
@@ -216,6 +219,7 @@ div.last {
           <li>336-829-0050<span class="bar">|</span></li>
           <li>New York, NY</li>
         </ul>
+
         <ul class="contact group">
           <li><a href="http://jackvnimble.com">jackvnimble.com</a><span class="bar">|</span></li>
 
@@ -223,7 +227,7 @@ div.last {
           </li>
 
           <li>
-            <a href="http://linkedin.com/jackwilsonv">linkedin.com/jackwilsonv</a>
+            <a href="http://linkedin.com/in/jackwilsonv">linkedin.com/in/jackwilsonv</a>
           </li>
         </ul>
 
@@ -233,25 +237,25 @@ div.last {
           <header class="title">PROJECTS</header>
           <div class="content">
             <div class="segment">
-              <ul class="bullets">
-                <li class="bullets">
+              <ul>
+                <li class="header">
                   <strong>Everread</strong>&mdash;<em>Social book organization and discovery web-app</em><span class="bar">|</span><a href="http://everread.rocks">live</a><span class="bar">|</span><a href="https://github.com/jackwilsonv/everread">github</a>
                 </li>
-                <li>Backbone.js frontend consumes RESTful API served by Ruby on Rails backend</li>
-                <li>Minimizes database queries through custom nested JSON/Jbuilder responses</li>
-                <li>Innovative drag and drop UI custom built in native HTML5</li>
+                <li class="bullets">Backbone.js frontend consumes RESTful API served by Ruby on Rails backend</li>
+                <li class="bullets">Minimizes database queries through custom nested JSON/Jbuilder responses</li>
+                <li class="bullets">Innovative drag and drop UI custom built in native HTML5</li>
               </ul>
             </div>
 
             <div class="segment">
               <ul class="bullets">
-                <li class="bullets">
-                  <strong>HollowRail</strong>&mdash;<em>lightweight MVC framework modeled after Ruby on Rails</em><span class="bar">|</span><a href="https://github.com/jackwilsonv/hollowrail">github</a>
+                <li class="header">
+                  <strong>HollowRail</strong>&mdash;<em>Lightweight MVC framework modeled after Ruby on Rails</em><span class="bar">|</span><a href="https://github.com/jackwilsonv/hollowrail">github</a>
                 </li>
-                <li>
+                <li class="bullets">
                   Generates RESTful routes and matches incoming requests using Ruby, RegExps
                 </li>
-                <li>
+                <li class="bullets">
                   Flashes self-destructing messages to users using WEBrick cookies
                 </li>
               </ul>
@@ -259,26 +263,26 @@ div.last {
 
             <div class="segment">
               <ul class="bullets">
-                <li class="bullets"><strong>Asteroids</strong>&mdash;<em>Star Wars spin on the classic arcade game</em><span class="bar">|</span><a href="http://jackwilsonv.github.io/Asteroids">live</a><span class="bar">|</span><a href="https://github.com/jackwilsonv/asteroids">github</a>
+                <li class="header"><strong>Asteroids</strong>&mdash;<em>The classic arcade game with a Star Wars theme</em><span class="bar">|</span><a href="http://jackwilsonv.github.io/Asteroids">live</a><span class="bar">|</span><a href="https://github.com/jackwilsonv/asteroids">github</a>
                 </li>
-                <li>
+                <li class="bullets">
                   Built in JavaScript using sound OO principles, rendered with HTML5 Canvas
                 </li>
-                <li>
+                <li class="bullets">
                   Uses linear algebra for positioning and velocity calculations
                 </li>
               </ul>
             </div>
 
             <div class="segment last">
-              <ul class="bullets">
-                <li><strong>Flotilla</strong>&mdash;<em>Streamlined enterprise expense reporting</em><span class="bar">|</span><a href="http://blog.yodleeinteractive.com/flotilla-for-the-win-at-techcrunch-disrupt-ny-hackathon/">article</a>
+              <ul>
+                <li class="header"><strong>Flotilla</strong>&mdash;<em>Mobile-first streamlined enterprise expense reporting</em><span class="bar">|</span><a href="http://blog.yodleeinteractive.com/flotilla-for-the-win-at-techcrunch-disrupt-ny-hackathon/">article</a>
                 </li>
-                <li>
+                <li class="bullets">
+                  1st place for best use of Yodlee Financial API at 2014 Disrupt NY Hackathon
+                </li>
+                <li class="bullets">
                   Node.js/Angular web-app aiming to drastically simplify expense reporting
-                </li>
-                <li>
-                  1st place for best use of Yodlee Financial Data API at the Disrupt NYC Hackathon
                 </li>
               </ul>
             </div>
@@ -302,15 +306,15 @@ div.last {
           <div class="content">
             <div class="segment">
               <ul>
-                <li>
+                <li class="header">
                   <strong>University of North Carolina</strong>&mdash;Kenan-Flagler Business School
                   <span class="float-right">2007-2011</span>
                 </li>
 
-                <li>
+                <li class="courses">
                   BS in Business Administration&mdash;Finance, GPA: 3.6
                 </li>
-                <li>
+                <li class="courses">
                   <em>
                     Relevant Coursework: Data Structures, Calculus, Statistics
                   </em>
@@ -322,12 +326,14 @@ div.last {
 
               <h4>Independent Study</h4>
 
-              <ul class="courses">
-                <li>
+              <ul>
+                <li class="courses">
                   Stanford&mdash;<a href='https://www.coursera.org/course/algo'>Algorithms</a>, <a href='https://class.stanford.edu/courses/Engineering/db/2014_1/about'>Databases</a>, <a href='https://www.coursera.org/course/ml'>Machine Learning</a>
-                  <br>
+                </li>
+                <li class="courses">
                   Udacity&mdash;<a href='https://www.udacity.com/course/cs212'>Design of Computer Programs</a>, <a href='https://www.udacity.com/course/cs253'>Web Development</a>
-                  <br>
+                </li>
+                <li class="courses">
                   UT Austin&mdash;<a href='https://www.edx.org/course/utaustinx/utaustinx-ut-5-01x-linear-algebra-1162'>Linear Algebra</a>
                 </li>
               </ul>
@@ -345,13 +351,14 @@ div.last {
                 <li><a class="header" href="http://www.ge.com"><strong>GE</strong></a>&mdash;<a class="sub-header" href="http://www.ge.com/careers/culture/university-students/financial-management-program/united-states">Financial Management Program</a>
                   <span class="float-right">2012-2014</span>
                 </li>
-                <li class="bullets">
-                  <em>Widely considered the premier program of its kind, FMP develops leadership and analytical skills through four assignments in diverse finance functions</em>
+                <li>
+                  <em>Premier financial leadership program consisting of four rotations through diverse GE businesses and functions</em>
+                  <!-- <em>Widely considered the premier program of its kind, FMP develops leadership and analytical skills through four rotations in diverse GE businesses and functions</em> -->
                 </li>
                 <li class="bullets">
                   Taught myself VBA programming to create an Excel interface between legacy ledgers and Concur, reducing IT burden and meeting key deadlines
                 </li>
-                <li>
+                <li class="bullets">
                   Led restructuring project at Corporate HQ to purify functional cost centers, working closely with executives and key stakeholders in each function
                 </li>
               </ul>
@@ -360,13 +367,13 @@ div.last {
             <div class="segment last">
               <ul class="bullets">
                 <li>
-                  <a class="header" href="http://www.marines.com/becoming-a-marine/officer-candidates-school"><strong>USMC</strong><span class="normal">&mdash;Platoon Leaders Course</span></a>
+                  <a class="header" href="http://www.marines.com/">USMC</a>&mdash;<a class="sub-header" href="http://www.marines.com/becoming-a-marine/officer-candidates-school">Platoon Leaders Course</a>
                   <span class="float-right">Summer 2009</span>
                 </li>
-                <li class="bullets"><em>Training program simulating the extreme conditions borne by Marine Corps officers</em>
+                <li><em>Six-week training program designed to simulate the extreme conditions under which Marine Corps officers must thrive</em>
                 </li>
-                <li>
-                  Overcame pneumonia and anemia to acheive 6th place finish in a 55 candidate platoon as ranked by leadership, academics and physical training
+                <li class="bullets">
+                  Overcame pneumonia and anemia to acheive 6th place finish in a 55 candidate platoon as ranked in leadership, academics and physical training
                 </li>
               </ul>
             </div>
