@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link
+href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700,600,400' rel='stylesheet' type='text/css'>
+  <title>Jack Wilson</title>
+  <style>
+
+/* --- Reset user agent styles --- */
+
+html, body, header, h1, h2, h4, nav, div, ul, li, a, p, footer, small, strong, em {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* --- Set basic html elements --- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFA;
+  font-size: 14pt;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #343435;
+}
+
+a {
+  font-weight: 600;
+  color: grey;
+  text-decoration: none;
+}
+
+a.header {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 12px;
+}
+
+em {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* --- Helper methods (clearfix) --- */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+@page {
+    size: US-Letter;
+    margin: 0;
+}
+
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+/* --- overall page --- */
+
+#resume {
+    height: 256mm;
+    outline: 2cm #FFEAEA solid;
+}
+
+.page {
+    width: 8.5in;
+    min-height: 11.0in;
+    padding: 0.75in;
+    margin: 0 auto;
+    /*border: 1px #D3D3D3 solid;*/
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.last-name {
+  color: #56A0D3;
+  font-weight: 700;
+}
+
+ul.contact {
+  font-size: 14px;
+}
+
+ul.contact > li {
+  color: grey;
+  float: left;
+}
+
+.bar {
+  font-weight: bold;
+  color: #56A0D3;
+  margin: 0 5px;
+}
+
+/*hr {
+  margin: 20px 0;
+  border: 0;
+  height: 0;
+  box-shadow: 0 0 5px 2px grey;
+}
+hr:after {
+  content: "\00a0";
+}*/
+
+hr {
+  margin: 15px 0;
+  border: 1px solid grey;
+}
+
+/*hr {
+  border: 0;
+  border-bottom: 3px grey;
+  background: blue;
+}*/
+
+header.title {
+  float: left;
+  width: 1.5in;
+  font-size: 14px;
+  font-weight: 600;
+  color: #56A0D3;
+}
+
+div.content {
+  float: left;
+  width: 5.5in;
+  font-size: 14px;
+}
+
+div.segment {
+  margin-bottom: 15px;
+}
+
+ul.courses {
+  margin-left: 15px;
+}
+
+li.bullets {
+  margin-bottom: 5px;
+}
+
+div.last {
+  margin-bottom: 0;
+}
+
+p {
+  margin: 15px 0;
+}
+
+ul.addressee {
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="page">
+      <div class="resume">
+        <h1>Jack <span class="last-name">Wilson</span></h1>
+
+        <ul class="contact group">
+          <li>New York, NY<span class="bar">|</span></li>
+          <li>jack.wilson.v@gmail.com<span class="bar">|</span></li>
+          <li>336-829-0050</li>
+        </ul>
+        <ul class="contact group">
+          <li><a href="http://jackvnimble.com">jackvnimble.com</a><span class="bar">|</span></li>
+
+          <li><a href="http://github.com/jackwilsonv">github.com/jackwilsonv</a><span class="bar">|</span>
+          </li>
+
+          <li>
+            <a href="http://linkedin.com/jackwilsonv">linkedin.com/jackwilsonv</a>
+          </li>
+        </ul>
+
+        <hr>
+
+        <section class="group">
+          <p>Goodreads team,</p>
+
+          <p>In today's tech powered economy, successful companies are producing evermore complex and amazing products. To build and contribute to these products engineers and developers must not only be excellent programmers but they must also be great at working with a team towards a common goal.</p>
+
+          <p>I’m a web developer with experience building and designing applications powered by Ruby on Rails, JavaScript, Backbone.js and HTML/CSS. My portfolio demonstrates my skills and my resume demonstrates my past success leading projects and delivering results on teams in professional settings.</p>
+
+          <p>My ideal workplace involves a fun, motivated team that never stops learning and improving working on an issue that I am passionate about. I belive that Goodreads would be that kind of workplace. The website is an ever-evolving and improving product that involves one of my great loves, books, and I want to be part of your team.</p>
+
+          <p>One of my personal projects, everread.rocks, is a tribute to one of my favorite features of Goodreads, the bookshelves. I implemented them to be the core of my "fan-app" with some cool drag-and-drop functionality for the actual book shelving process that I hope you'll checkout. Thank you for your consideration!</p>
+
+          <p>Best,</p>
+          <ul>
+            <li>Jack Wilson</li>
+            <li>
+              <a href="http://jackvnimble.com">jackvnimble.com</a>
+            </li>
+            <li>
+              <a href="http://github.com/jackwilsonv">github.com/jackwilsonv</a>
+            </li>
+          </ul>
+      </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
