@@ -58,7 +58,7 @@ ul {
 }
 
 h1 {
-  font-size: 46px;
+  font-size: 36px;
   font-weight: 600;
   margin: 0 0 5px 0;
 }
@@ -170,7 +170,6 @@ hr {
 }
 
 header.title {
-  float: left;
   width: 1.25in;
   font-size: 15px;
   font-weight: 600;
@@ -178,8 +177,8 @@ header.title {
 }
 
 div.content {
-  float: left;
-  width: 5.75in;
+  width: 6.5in;
+  margin-left: .25in;
   /*font-size: 15px;*/
 }
 
@@ -232,19 +231,25 @@ div.last {
                 <li><a class="header"
                     href="https://www.mavenlink.com"><strong>Mavenlink</strong></a>&mdash;<span
                     class="sub-header">Security Engineer</span>
-                  <span class="float-right">2017-2018</span>
+                  <span class="float-right">Jul. 2017 - Sept. 2018</span>
                 </li>
                 <li class="bullets">
                   <em>Managed security aspects of production codebase alongside
                     operations and product development teams</em>
                 </li>
                 <li class="bullets">
-                  Managed responsible disclosure program (HackerOne), verifying
-                  all submitted reports, triaging and writing code to address
-                  any confirmed security issues
+                  Managed responsible disclosure program (HackerOne): verified,
+                  triaged and resolved any confirmed security issues.
+                  Improved time-to-first-response from 2 weeks to
+                  1 day and time-to-resolution from 6 months 1 month
                 </li>
                 <li class="bullets">
-                  Built presentations and teach web security best practices to the development team
+                  Presented on OWASP top-10 and web security best practices to
+                  team of 45 developers
+                </li>
+                <li class="bullets">
+                  Led implementation of secure header Content-Security-Policy
+                  and built serverless AWS Lambda endpoint for reports
                 </li>
                 <li class="bullets">
                   Documented, tracked and improved processes for SOC 2 compliance
@@ -256,17 +261,18 @@ div.last {
               <ul class="bullets">
                 <li>
                   <a class="header" href="https://thoughtbot.com"><strong>thoughtbot</strong></a>&mdash;<span class="sub-header">Developer</span>
-                  <span class="float-right">2016-2017</span>
+                  <span class="float-right">Feb. 2016 - Jul. 2017</span>
                 </li>
                 <li class="bullets">
                   <em>Worked alongside product and design teams to bring
-                    client's products to life.</em>
+                    clients' products to life</em>
                 </li>
                 <li class="bullets">
-                  Project highlights include: full-service online car dealership
-                  (Elixir/Phoenix), an online marketplace for non-public equity
-                  (Ruby/Rails), a large sports job/recruiting application
-                  (Ruby/Rails)
+                  Project highlights: full-service online car dealership
+                  (Elixir/Phoenix), online marketplace for non-public equity
+                  (Ruby/Rails), large sports job/recruiting application
+                  (Ruby/Rails), implemented secure API backend for a mobile
+                  dating app (Elixir/Phoenix)
                 </li>
               </ul>
             </div>
@@ -274,20 +280,21 @@ div.last {
               <ul class="bullets">
                 <li>
                   <a class="header" href="https://www.mavenlink.com"><strong>Mavenlink</strong></a>&mdash;<span class="sub-header">Software Engineer</span>
-                  <span class="float-right">2014-2016</span>
+                  <span class="float-right">Oct. 2014 - Feb. 2016</span>
                 </li>
                 <li class="bullets">
-                  <em>Pairing with colleagues to continuously deliver
-                    groundbreaking features in project management software</em>
+                  <em>Paired with colleagues using Agile methodologies to continuously deliver
+                    new features</em>
                 </li>
                 <li class="bullets">
-                  Led development of the BI integration pipeline with GoodData
-                  that provided premium customers with unparalleled in-app business intelligence
+                  Led development of the BI integration pipeline with GoodData;
+                  wrote Ruby background jobs, Rake tasks and cron jobs as part of ETL
+                  process
                 </li>
                 <li class="bullets">
-                  Helped develop fully featured rate card system that can be
-                  tailored to complex international business models with many
-                  currencies
+                  Rewrote Rails Arel scopes into performant SQL to speed up
+                  the entire ETL cycle from over 24 hours to less than 12 when
+                  largest customer signed up for BI offering
                 </li>
               </ul>
             </div>
@@ -297,14 +304,12 @@ div.last {
                 <li>
                   <a class="header" href="https://www.ge.com">
                     <strong>GE</strong></a>&mdash;<a class="sub-header" href="https://www.ge.com/careers/culture/university-students/financial-management-program/united-states">Financial Management Program</a>
-                  <span class="float-right">2012-2014</span>
+                  <span class="float-right">Jan. 2012 - Jan. 2014</span>
                 </li>
                 <li class="bullets">
-                  <em>Widely considered the premier program of its kind, FMP develops leadership and analytical skills through four assignments in diverse finance functions</em>
-                </li>
-                <li class="bullets">
-                  Taught myself VBA programming to build Excel integration
-                  between legacy financial ledgers and Concur, reducing IT burden and meeting key deadlines
+                  Taught self VBA programming to build an Excel integration
+                  between legacy ledgers and new expense reporting software,
+                  allowing team to meet key business deadlines
                 </li>
               </ul>
             </div>
@@ -313,11 +318,8 @@ div.last {
               <ul class="bullets">
                 <li>
                   <a class="header" href="https://www.marines.com/becoming-a-marine/officer-candidates-school">
-                    <strong>USMC</strong><span class="normal">&mdash;Platoon Leaders Course</span></a>
+                    <strong>United States Marine Corps</strong><span class="normal">&mdash;Platoon Leaders Course</span></a>
                   <span class="float-right">Summer 2009</span>
-                </li>
-                <li class="bullets"><em>Leadership training designed to simulate the
-                    extreme conditions borne by USMC officers</em>
                 </li>
                 <li>
                   Overcame pneumonia and anemia to acheive 6th place finish in a 55 candidate platoon as ranked by leadership, academics and physical training
@@ -360,16 +362,6 @@ div.last {
         <hr>
 
         <section class="group">
-          <header class="title">SKILLS</header>
-          <div class="content">
-            <div class="segment last"><strong>Ruby, Rails, Rust, Web Security,
-                JavaScript, AWS, Elixir, Assembly, Git, Bash, SQL, Ansible, TDD, Agile</strong></div>
-          </div>
-        </section>
-
-        <hr>
-
-        <section class="group">
           <header class="title">EDUCATION</header>
           <div class="content">
             <div class="segment last">
@@ -381,9 +373,9 @@ div.last {
                   <em>Self-directed programmer's retreat</em>
                 </li>
                 <li class="bullets">
-                  Spent time focused on learning Rust and all about security by
-                  solving Cryptopals challenges, participating in CTFs and other
-                  IT sec games (hackthebox.eu, microcorruption.com, etc.)
+                  Focused on learning Rust and all about security by solving
+                  Cryptopals challenges, participating in CTFs and IT sec games
+                  (Hack The Box, Microcorruption, etc.)
                 </li>
               </ul>
             </div>
@@ -417,8 +409,6 @@ div.last {
 
           <!-- </div> -->
         </section>
-
-
       </div>
   </div>
 </body>
